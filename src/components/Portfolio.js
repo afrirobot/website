@@ -62,14 +62,13 @@ const Portfolio = ({ onViewPortfolio }) => {
                 </div>
               ))}
             </div>
-            <a 
-              href="#" 
-              className="btn view-portfolio-btn" 
-              data-category={cat.category}
-              onClick={(e) => handleViewPortfolio(e, cat.category)}
-            >
-              View {cat.title === 'Graphic Design' ? 'Design' : cat.title === 'Video Editing' ? 'Video' : 'Tech'} Portfolio
-            </a>
+            <button 
+  className="btn view-portfolio-btn" 
+  data-category={cat.category}
+  onClick={(e) => handleViewPortfolio(e, cat.category)}
+>
+  View {cat.title === 'Graphic Design' ? 'Design' : cat.title === 'Video Editing' ? 'Video' : 'Tech'} Portfolio
+</button>
           </div>
         ))}
       </div>
